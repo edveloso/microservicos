@@ -1,6 +1,11 @@
 package br.edu.infnet.loja;
 
-public class ProdutoDTO {
+import java.io.Serializable;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class ProdutoDTO  implements Serializable{
 	
 	private Long id;
 	
@@ -25,3 +30,4 @@ public class ProdutoDTO {
 	
 
 }
+

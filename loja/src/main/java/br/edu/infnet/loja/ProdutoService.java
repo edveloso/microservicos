@@ -24,9 +24,9 @@ public class ProdutoService {
 						null, 
 						List.class);
 		
-		System.out.println(" Retorno "+ exchange );
+		System.out.println(" Retorno "+ (List<ProdutoDTO>) exchange.getBody() );
 		
-		return (List<ProdutoDTO>) exchange;
+		return (List<ProdutoDTO>) exchange.getBody();
 	}
 	
 
